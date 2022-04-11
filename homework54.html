@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// C=(M!+N!)/(M+1)!
+// M и N – числа введенные с клавиатуры.
+// M! – это факториал числа, например, 5! = 1*2*3*4*5, это равно 120.
+// Факториал должен вычисляться с помощью функции.
+// Разместить на GitHub.
+
+
+        
+        let n = +prompt('Введите число N')
+        
+        function factorialN(n) {
+            if (n == 1) {
+             return 1;
+             }
+  
+            return n * factorialN(n - 1);
+        }
+        alert(factorialN(n)); 
+
+
+        let m = +prompt('Введите число M')
+        
+        function factorialM(m) {
+            if (m == 1) {
+             return 1;
+             }
+  
+            return m * factorialM(m - 1);
+        }
+        alert(factorialM(m)); 
+
+        let c = ((factorialM(m) + factorialM(n)) / (m + 1));
+        alert(c);
+       
+        
+        function factorialC(c) {
+            if (c == 1) {
+             return 1;
+             }
+  
+            return c * factorialC(c - 1);
+        }
+        alert(factorialC(c)); 
+
+
+
+
+
+
+    </script>
+</body>
+</html>
